@@ -45,4 +45,5 @@ npm run start
 ```
 
 ## Screeshots
+<img src="./public/homepage.png" alt="homepage" width="100%" />
 
