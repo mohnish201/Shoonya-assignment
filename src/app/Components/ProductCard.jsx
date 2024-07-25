@@ -24,22 +24,6 @@ const ProductCard = ({ item }) => {
                     <p className="font-[500]">{item?.condition}</p>
                 </div>
 
-
-
-                {/* <div className="flex items-center gap-10">
-                    <div className="text-sm">
-                        <p className="text-sm text-gray-700">Type</p>
-                        <p className="font-[500] text-primary text-sm">{item?.type}</p>
-                    </div>
-                    <div className="text-sm">
-                        <p className="text-sm text-gray-700">Location</p>
-                        <p className="font-[500] text-primary text-sm">{item?.location}</p>
-                    </div>
-                    <div className="text-sm">
-                        <p className="text-sm text-gray-700">Condition</p>
-                        <p className="font-[500] text-primary text-sm">{item?.condition}</p>
-                    </div>
-                </div> */}
                 <div className="flex justify-between items-center">
                     <h3 className="text-xl font-[600] text-primary">{formatCurrency(item?.price)}</h3>
                     <p>{formatDate(item?.date)}</p>
