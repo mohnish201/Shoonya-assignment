@@ -8,8 +8,8 @@ const getProducts = async (searchParams) => {
     params2.delete('limit');
     params2.delete('page')
     try {
-        let total = await fetch(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?${params2.toString()}`)
-        let response = await fetch(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?${params.toString()}`);
+        let total = await fetch(`${process.env.SERVER}?${params2.toString()}`)
+        let response = await fetch(`${process.env.SERVER}?${params.toString()}`);
         let data = await response.json();
         let length = await total.json()
         console.log(length)
@@ -30,7 +30,7 @@ const getProducts = async (searchParams) => {
 const getProductById = async (id) => {
 
     try {
-        const response = await fetch(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats/${id}`);
+        const response = await fetch(`${process.env.SERVER}/${id}`);
         const data = await response.json()
         return data
     } catch (error) {
