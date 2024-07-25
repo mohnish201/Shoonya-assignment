@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Navbar } from "./Components/Navbar";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800'] });
 
 export const metadata = {
   title: "Shoonya Wellness Retreat",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Navbar />
         {children}
       </body>
