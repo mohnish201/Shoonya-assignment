@@ -1,5 +1,8 @@
 # Shoonya Wellness Retreats Assignment
 
+### Deployed Link
+**https://shoonya-wellness-retreats.vercel.app/**
+
 ## Getting Started
 
 ### Prerequisites
